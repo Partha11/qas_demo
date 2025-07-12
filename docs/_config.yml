@@ -1,0 +1,51 @@
+title: QSMS
+description: Official build releases, updates, and guides for the QSms app — your solution for reliable SMS campaigns.
+theme: just-the-docs
+show_downloads: true
+baseurl: ""
+url: "https://partha11.github.io/qas_demo"
+source: .
+include:
+  - docs
+
+defaults:
+  - scope:
+      path: "docs"
+    values:
+      permalink: /:basename/
+repository: Partha11/qas_demo
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jekyll-sitemap
+
+callouts_level: quiet
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
